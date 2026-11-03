@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="simple_durability_tooltip"
+version="${version}"
+displayName="Simple Durability Tooltip"
+description="Lightweight client-side durability tooltip."
+authors="dxxi3d"
+displayURL="https://github.com/dxxi3d/simple_durability_tooltip"
+issueTrackerURL="https://github.com/dxxi3d/simple_durability_tooltip/issues"
+logoFile="assets/simple_durability_tooltip/icon.png"
+
+[[mixins]]
+config="simple_durability_tooltip.mixins.json"
+
+[[dependencies.simple_durability_tooltip]]
+modId="forge"
+mandatory=true
+versionRange="[1,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.simple_durability_tooltip]]
+modId="minecraft"
+mandatory=true
+versionRange="[${minecraft_version},)"
+ordering="NONE"
+side="CLIENT"
